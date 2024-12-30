@@ -1,0 +1,154 @@
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 30%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 26px;
+  box-shadow: 1px 18px 20px 3px hsla(224, 23%, 55%, 0.2);
+}
+
+
+.image-cont img {
+  display: block;
+  width: 100%;
+}
+
+.content {
+  background: hsl(225, 100%, 98%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.content h1 {
+  margin-top: 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.content p {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.125rem;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+
+.plan {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: hsla(225, 100%, 94%, 0.4);
+  border-radius: 12px;
+}
+
+.plan-content {
+  display: flex;
+  gap: 20px;
+}
+
+.annual-plan {
+  text-align: left;
+}
+
+.annual-plan h2 {
+  margin: 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.annual-plan p {
+  margin: 0;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-top: 0.2rem;
+}
+
+.plan a {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+
+.plan a:hover {
+  color: hsl(244.51deg 82.61% 68.43%);
+  text-decoration: none;
+}
+
+.container button {
+  width: 100%;
+  margin: 1.5rem 0 2rem 0;
+  padding: 1rem;
+  background: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 12px;
+  color: hsl(225, 100%, 98%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px -5px hsl(245, 83%, 68%);
+}
+
+.container button:hover{
+  background: hsl(244.51deg 82.61% 68.43%);
+}
+
+.change a {
+  color: hsl(224, 23%, 55%);
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding-bottom: 0.5rem
+}
+.change a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width:1441px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 40%; 
+  }
+}
+
+@media screen and (max-width:730px) {
+
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .content p {
+    line-height: 23px;
+}
+}
